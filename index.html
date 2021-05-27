@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Rahul Milk Store</title>
+    <style>
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.89;
+
+}
+
+.logo {
+    margin: 10px 0px;
+}
+
+.logo img {
+    height: 50px;
+    margin: 10px 10px;
+}
+
+ul {
+    display: flex;
+    text-transform: uppercase;
+}
+
+ul li {
+    list-style: none;
+    font-size: 25px;
+}
+
+ul li a {
+    display: block;
+    padding: 3px 25px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+ul li a:hover {
+    color: blue;
+    background-color: white;
+}
+
+
+
+
+.home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.home {
+    text-align: center;
+    margin: 250px 100px;
+    color: white;
+}
+
+header {
+    width: 100%; height: 125vh;
+    background-image: url(logo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.89;
+}
+
+.heading1 {
+    font-size: 40px;
+    padding: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: darkolivegreen;
+}
+
+.head1 {
+    font-size: 80px;
+    padding: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: red;
+}
+
+span.head2::after {
+    content: "";
+    animation-name: changetext;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    color: blue;
+    text-transform: uppercase;
+}
+
+@keyframes changetext {
+    0%   {content: " Bangalore ";}
+    50%  {content: " Shivamogga ";}
+    100% {content: " Davanagare ";}
+}
+
+.head3 {
+    font-size: 100px;
+    padding: 0;
+    text-align: center;
+    text-transform: uppercase;
+    color: firebrick;
+}
+
+
+.home p{
+    font-size: 25px;
+    padding: 10px;
+    text-align: center;
+    color: rgb(255, 238, 0);
+}
+
+.button1 {
+    font-size: 30px;
+    margin: 40px 40px;
+    padding: 6px 30px;
+    background-color: blue;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.button1:hover {
+    background-color: red;
+    color: pink;
+}
+
+.h-primary {
+    text-align: center;
+    font-size: 70px;
+    padding: 12px;
+}
+
+.h-secondary {
+    text-align: center;
+    padding: 12px;
+    font-size: 45px;
+}
+
+.center {
+    text-align: center;
+}
+
+#servies {
+    margin: 34px;
+    display: flex;
+}
+
+#servies .box {
+    border: 3px solid black;
+    padding: 50px;
+    margin: 10px 15px;
+    border-radius: 34px;
+}
+
+#servies .box img {
+    height: 160px;
+    margin: auto;
+    display: flex;
+}
+
+.h-pr1 {
+    text-align: center;
+    font-size: 55px;
+    margin: 50px 50px;
+}
+
+
+
+.myclint {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 450px;
+}
+
+.clint-item img {
+    height: 250px;
+    margin: 20px 65px;
+}
+
+
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background-color: red;
+}
+
+
+.h-pr2 {
+    text-align: center;
+    font-size: 55px;
+    padding: 20px 25px;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 9px;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+#contact-box form {
+    width: 40;
+}
+
+#contact-box label {
+    font-size: 25px;
+}
+
+#contact {
+    text-transform: uppercase;
+}
+
+.form-group {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 50px;
+}
+
+.center {
+    font-size: 25px;
+    padding-top: 10px;
+}
+
+
+
+    </style>
+</head>
+<body>
+
+
+    <header>
+    <nav id="navbar">
+        <div class="logo">
+            <img src="logo2.jpg" alt="shashank">
+        </div>
+
+        <ul>
+            <li class=""><a href="http://127.0.0.1:5500/index.html">home</a></li>
+            <li class=""><a href="https://youtu.be/Qah9sSIXJqk" target="_blank">support</a></li>
+            <li class=""><a href="http://127.0.0.1:5500/about.html">about</a></li>
+            <li class=""><a href="http://127.0.0.1:5500/contant.html">CONTECT US</a></li>
+        </ul>
+    </nav>
+
+    <section class="home">
+        <h3 class="heading1">welcome to Rahul milk store</h3>
+        <h2 class="head3"> Rahul milk store </h2>
+        <h1 class="head1"> mystore in karnataka  <span class="head2"></span></h1>
+        <p>From June 3rd to June 27th, sign up and score 60 points in your 10 qualifying matches to earn an Epic weapon blueprint </p>
+        <p>From June 3rd to June 27th, sign up and score 60 points in your 10 qualifying </p>
+        <button class="button1">to buy</button>
+    </section>
+   
+</header>
+
+
+<section class="servies1">
+    <h1 class="h-primary"> our servies</h1>
+    <div id="servies">
+        <div class="box">
+            <img src="logo1.jpg" alt="">
+            <h2 class="h-secondary"> food ordering</h2>
+            <p class="center">From June 3rd to June 27th, sign up and score 60 points in your 10 qualifying matches to earn an Epic weapon blueprint From June 3rd to June 27th, sign up and score 60 points in your 10 qualifying matches to earn an Epic weapon blueprint</p>
+        </div>
+
+        <div class="box">
+            <img src="background.jpg" alt="">
+            <h2 class="h-secondary"> food ordering</h2>
+            <p class="center">From June 3rd to June 27th, sign up and score 60 points in your 10 qualifying matches to earn an Epic weapon blueprint From June 3rd to June 27th, sign up and score 60 points in your 10 qualifying matches to earn an Epic weapon blueprint</p>
+        </div>
+
+        <div class="box">
+            <img src="1.jpg" alt="">
+            <h2 class="h-secondary"> food ordering</h2>
+            <p class="center">From June 3rd to June 27th, sign up and score 60 points in your 10 qualifying matches to earn an Epic weapon blueprint From June 3rd to June 27th, sign up and score 60 points in your 10 qualifying matches to earn an Epic weapon blueprint</p>
+        </div>
+    </div>
+</section>
+
+<section class="myclint">
+    <h1 class="h-pr1">MY CLINT</h1>
+    <div id="clint">
+        <div class="clint-item">
+            <img src="clint1.jpg" alt="">
+            <img src="clint2.jpg" alt="">
+            <img src="clint3.jpg" alt="">
+            <img src="clint4.jpg" alt="">
+        </div>
+    </div>
+</section>
+
+
+<section id="contact">
+    <h1 class="h-pr2">contect us</h1>
+    <div id="contact-box">
+        <form action="">
+        <div class="form-group">
+            <label for="">name</label>
+            <input type="text" name="name" id="name" placeholder="enter your name">
+        </div>
+        <div class="form-group">
+            <label for="">email</label>
+            <input type="text" name="email" id="email" placeholder="enter your email">
+        </div>
+        <div class="form-group">
+            <label for="">phone number</label>
+            <input type="text" name="phone number" id="phone number" placeholder="enter your phone number">
+        </div>
+        <div class="form-group">
+            <label for="">message</label>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        </div>
+    </form>
+    </div>
+</section>
+
+<footer>
+    <div class="center">
+        coperight &copy; www.rahul.com. All rights reserved!
+    </div>
+</footer>
+
+</body>
+</html>
